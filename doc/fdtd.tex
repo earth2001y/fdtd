@@ -1,0 +1,56 @@
+\documentclass[10pt]{jsarticle}
+\usepackage{bm}
+
+\begin{document}
+
+\title{}
+\author{}
+\date{}
+\maketitle
+
+\section{Equation}
+
+\subsection{Maxwell's equations}
+
+Electric field $\bm{E}(t,\bm{x})$[V/m]
+and magnetic flux density $\bm{B}(t,\bm{x})$[T](=[Wb/m$^2$]):
+\begin{eqnarray}
+  \nabla\cdot\bm{B} & = & 0 \\
+  \nabla\times\bm{E} + \frac{\partial\bm{B}}{\partial t} & = & \bm{0} \\
+  \nabla\cdot\bm{D} & = & \rho \\
+  \nabla\times\bm{H} - \frac{\partial\bm{D}}{\partial t} & = & \bm{j}
+\end{eqnarray}
+
+$\bm{D}$ is electric flux density[C/m$^2$], 
+$\bm{H}$ is magnetic field[A/m],
+\begin{eqnarray}
+  \bm{D} & = & \varepsilon\bm{E} \\
+  \bm{B} & = & \mu\bm{H}
+\end{eqnarray}
+$\varepsilon$ is permittivity [F/m](=[N/V$^2$]),
+$\mu$ is magnetic permittivity [H/m](=[N/A$^2$]).
+$\rho$ is charge density[C/m$^3$],
+$\bm{j}$ is electric current density[C/m$^2$s](=[A/m$^2$]).
+\begin{eqnarray}
+  \bm{j} & = & \sigma\bm{E}
+\end{eqnarray}
+$\sigma$ is electrical conductivity[S/m](=[A/Vm]).
+
+\begin{eqnarray}
+  \nabla\times\bm{E} + \mu\frac{\partial\bm{H}}{\partial t} & = & \bm{0} \\
+  \nabla\times\bm{H} - \varepsilon\frac{\partial\bm{E}}{\partial t} & = & \sigma\bm{E}
+\end{eqnarray}
+
+\subsection{Diffarential Equation}
+\subsubsection{Descretion in Time dimension}
+
+\begin{eqnarray}
+ \frac{\partial\bm{H}}{\partial t} & = &
+ 	- \frac{1}{\mu}\nabla\times\bm{E}\\
+ \frac{\partial\bm{E}}{\partial t} & = &
+ 	\frac{1}{\varepsilon}\nabla\times\bm{H}
+	- \frac{\sigma}{\varepsilon}\bm{E}
+\end{eqnarray}
+
+\end{document}
+
